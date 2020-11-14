@@ -20,6 +20,7 @@ endif
 
 function! s:setup_insmode()
   if get(b:, 'lexima_disabled', 0)
+    silent! iunmap <esc>
     return
   endif
 
